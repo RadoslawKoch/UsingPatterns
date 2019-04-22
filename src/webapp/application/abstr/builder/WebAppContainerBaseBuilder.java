@@ -10,7 +10,7 @@ import webapp.application.definition.WebAppContainerDefinition;
 public abstract class WebAppContainerBaseBuilder<T extends WebAppDefinition> 
         extends WebAppBaseBuilder<T> {
     
-    protected List<WebAppDefinition> apps = new ArrayList();
+    protected List<WebAppDefinition> apps = new ArrayList<>();
 
     protected WebAppContainerBaseBuilder(Class<T>cl) {
         super(cl);

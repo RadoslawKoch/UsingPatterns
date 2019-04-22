@@ -15,7 +15,7 @@ public class WebAppImagesProxy
 
     @Override
     protected WebAppDefinition generate() throws Exception {
-        WebAppBaseBuilder builder = new WebAppImagesBuilder();
+        WebAppBaseBuilder<?> builder = new WebAppImagesBuilder();
         return builder.addService(this.repo.get("WebApp Analitics"))
                 .addService(this.repo.get("WebApp Storage"))
                 .addService(this.repo.get("WebApp Archives"))

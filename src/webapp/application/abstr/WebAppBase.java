@@ -23,7 +23,7 @@ public abstract class WebAppBase
     protected String appId;
     protected Thread appThread;
     //BRIDGE PATTERN (Possible to switch to ConcreteProxy)
-    protected WebAppCollectionDefinition<WebAppServiceDefinition,String> services = new WebAppCollection();
+    protected WebAppCollectionDefinition<WebAppServiceDefinition,String> services = new WebAppCollection<>();
     
     public WebAppBase(
             String appId,

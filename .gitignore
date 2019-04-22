@@ -3,3 +3,7 @@
 /nbproject/*
 /test/*
 *.class
+/bin/
+
+*.project
+*.classpath

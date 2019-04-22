@@ -15,7 +15,7 @@ public class WebAppVideoProxy
 
     @Override
     protected WebAppDefinition generate() throws Exception {
-        WebAppBaseBuilder builder = new WebAppVideoBuilder();
+        WebAppBaseBuilder<?> builder = new WebAppVideoBuilder();
         return builder.addService(this.repo.get("WebApp Ads"))
                 .addService(this.repo.get("WebApp Storage"))
                 .addService(this.repo.get("WebApp Archives"))

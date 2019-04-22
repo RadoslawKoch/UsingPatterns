@@ -15,7 +15,7 @@ public abstract class WebAppBaseContainer
         implements WebAppContainerDefinition{
       
     protected WebAppCollection<WebAppDefinition, String> list //COMPOSITE
-            = new WebAppCollection();
+            = new WebAppCollection<>();
 
     public WebAppBaseContainer(String appId, 
             WebAppGraphicsDefinition graphics, 

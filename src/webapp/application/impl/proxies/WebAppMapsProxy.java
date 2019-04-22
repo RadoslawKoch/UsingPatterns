@@ -15,7 +15,7 @@ public class WebAppMapsProxy
 
     @Override
     protected WebAppDefinition generate() throws Exception {
-       WebAppBaseBuilder builder = new WebAppMapsBuilder();
+       WebAppBaseBuilder<?> builder = new WebAppMapsBuilder();
        return builder.addService(this.repo.get("WebApp Geo"))
                .addService(this.repo.get("WebApp Ads"))
                .addService(this.repo.get("WebApp Analitics"))

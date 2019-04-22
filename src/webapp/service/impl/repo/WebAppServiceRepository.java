@@ -10,7 +10,7 @@ import webapp.service.definition.WebAppServiceDefinition;
 public class WebAppServiceRepository 
         extends WebAppCollection<WebAppServiceDefinition,String>{
     
-    private final Map<String,WebAppServiceDefinition> pool = new HashMap();//FLYWEIGHT
+    private final Map<String,WebAppServiceDefinition> pool = new HashMap<>();//FLYWEIGHT
     private static final WebAppServiceRepository REPO = new WebAppServiceRepository();//SINGLETON
     
     private WebAppServiceRepository(){}//SINGLETON

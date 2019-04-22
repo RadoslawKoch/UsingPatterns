@@ -8,8 +8,8 @@ import webapp.application.definition.WebAppDefinition;
 //IMPLEMENTING BUILDER PATTERN
 public abstract class WebAppBaseBuilder<T extends  WebAppDefinition> {
     
-    protected List<WebAppServiceDefinition> tmp = new ArrayList();
-    protected Class clToUse;
+    protected List<WebAppServiceDefinition> tmp = new ArrayList<>();
+    protected Class<T> clToUse;
     
     protected WebAppBaseBuilder(Class<T> cl){
         this.clToUse = cl;

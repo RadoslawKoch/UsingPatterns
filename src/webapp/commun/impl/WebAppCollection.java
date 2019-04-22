@@ -11,12 +11,12 @@ import webapp.application.definition.WebAppIdDefinition;
 public class WebAppCollection<T extends WebAppIdDefinition<I>,I> 
         implements WebAppCollectionDefinition<T,I>{
     
-    private final Map<I,T> apps = new HashMap();
-    private final List<I> names = new ArrayList();
+    private final Map<I,T> apps = new HashMap<>();
+    private final List<I> names = new ArrayList<>();
 
     @Override
     public List<T> getAllAps() {
-        List<T> list = new ArrayList();
+        List<T> list = new ArrayList<>();
         names.forEach((x) -> {
             list.add(apps.get(x));
         });

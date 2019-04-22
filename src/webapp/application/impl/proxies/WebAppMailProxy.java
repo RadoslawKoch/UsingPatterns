@@ -15,7 +15,7 @@ public class WebAppMailProxy
 
     @Override
     protected WebAppDefinition generate() throws Exception {
-       WebAppBaseBuilder builder = new WebAppMailBuilder();
+       WebAppBaseBuilder<?> builder = new WebAppMailBuilder();
        return builder.addService(this.repo.get("WebApp Ads"))
                .addService(this.repo.get("WebApp Storage"))
                .addService(this.repo.get("WebApp Archives"))

@@ -17,7 +17,7 @@ public class WebAppMusicProxy
 
     @Override
     protected WebAppDefinition generate() throws Exception {
-       WebAppBaseBuilder builder = new WebAppMusicBuilder();
+       WebAppBaseBuilder<?> builder = new WebAppMusicBuilder();
        return builder.addService(this.repo.get("WebApp Ads"))
                .addService(this.repo.get("WebApp Analitics"))
                .addService(this.repo.get("WebApp Archives"))
